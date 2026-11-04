@@ -2,7 +2,7 @@
 
 A lightweight web app that checks whether a message looks like spam, right in your browser. No backend, no sign-up, no data leaves your device.
 
-**Live demo:** https://vsmadhav-dev.github.io/sieve-text/
+**Live demo:** https://vsmadhav-dev.github.io/SieveText/
 
 ---
 
@@ -24,10 +24,10 @@ A lightweight web app that checks whether a message looks like spam, right in yo
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/vsmadhav-dev/sieve-text.git
+git clone https://github.com/vsmadhav-dev/SieveText.git
 
 # 2. Open the folder
-cd sieve-text
+cd SieveText
 
 # 3. Open index.html in your browser
 ```
@@ -37,7 +37,7 @@ No build step or installation needed. You can also use the VS Code **Live Server
 ## Project structure
 
 ```
-sieve-text/
+SieveText/
 ├── index.html    # App layout
 ├── style.css     # Styling
 ├── script.js     # Spam detection logic
