@@ -2,36 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Learn Regular Expressions by Building a Spam Filter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Sieve Text checks whether a message looks like spam, right in your browser." />
+    <title>Sieve Text: Is this message spam?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-<header class="main-text">
-    <h1 class="title">Is this Spam?</h1>
-    <p class="description">
-        Enter a phrase to check if it would be marked as spam or not.
-    </p>
-</header>
+<div class="page">
+    <a class="wordmark" href="./">
+        <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+            <circle cx="5" cy="6" r="2.2" /><circle cx="12" cy="6" r="2.2" /><circle cx="19" cy="6" r="2.2" />
+            <circle cx="8.5" cy="12.5" r="2.2" /><circle cx="15.5" cy="12.5" r="2.2" />
+            <circle cx="12" cy="19" r="2.2" />
+        </svg>
+        Sieve Text
+    </a>
 
-<main>
-    <label class="message-label" for="message-input">Message: </label>
-    <textarea
-            placeholder="Enter message here"
-            value=""
-            type="text"
-            name="message"
-            id="message-input"
-            rows="10"
-            cols="40"
-    ></textarea>
-    <button class="btn" id="check-message-btn" type="button">
-        Check message
-    </button>
-    <p id="result-message"></p>
-</main>
+    <header class="hero">
+        <h1 class="title">Is this message spam?</h1>
+        <p class="description">
+            Paste a text, email or DM and see whether it would be flagged as spam.
+        </p>
+    </header>
 
+    <main class="card">
+        <div class="stripe" aria-hidden="true"></div>
+        <div class="compose">
+            <label class="message-label" for="message-input">Message</label>
+            <textarea
+                    placeholder="Paste a message here…"
+                    name="message"
+                    id="message-input"
+                    rows="7"
+                    spellcheck="false"
+            ></textarea>
+            <button class="btn" id="check-message-btn" type="button">
+                Check message
+            </button>
+        </div>
+        <p id="result-message" role="status" aria-live="polite"></p>
+    </main>
+
+    <footer class="footer">
+        <p>Sieve Text runs in your browser. Nothing you paste is sent anywhere.</p>
+    </footer>
+</div>
 
 <script src="script.js"></script>
 </body>
